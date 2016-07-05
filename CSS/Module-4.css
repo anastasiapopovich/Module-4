@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(..//IMG/background.jpg);
+	font-family: Tahoma, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.container {
+	width: 1000px;
+	margin: 35px auto 0px auto;
+	background-color: #ffffff;
+	border: 1px solid;
+	box-shadow: 0px 7px 7px 0px rgba(0, 50, 50, 0.73);
+}
+
+/*HEADER*/
+.header {
+	padding: 10px 30px 0px 30px;
+	color: #128aa7;
+	position: relative;
+}
+
+.contacts {
+	list-style: none;
+	float: right;
+	font-size: 12px;
+}
+
+.countries {
+	position: absolute;
+	right: 30px;
+	bottom: 10px;
+}
+
+.countries li {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	width: 55px;
+	height: 55px;
+}
+
+.countries span {
+	display: block;
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+.image {
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+} 
+
+/*MENU*/
+
+menu {
+	position: relative;
+	height: 30px;
+	width: 100%;
+	background-image: url(../IMG/menu.png);
+}
+
+ul.menu:after {
+	display: block;
+	content: ' ';
+	clear: both;
+	float: none;
+}
+
+ul.menu  {
+	display: block;
+	list-style: none;
+}
+
+ul.menu  li {
+	float: left;
+	padding: 5px 35px;
+	z-index: 1;
+}
+
+ul.menu > li > a {
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+
+ul.submenu {
+	display: none;
+	position: absolute;
+	width: 150px;
+	top: 30px;
+	left: 130px;
+	background-image: url(..//IMG/submenu.png);
+	border-top: 1px solid black;
+}
+
+ul.submenu > li {
+	display: block;
+	width: 100%;
+}
+
+ul.submenu > li > a {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+ul.menu > li:hover > ul.submenu {
+	display: block;
+}
+
+/*MAIN*/
+
+h2 {
+	font-size: 18px;
+	color: #424c43;
+	text-align: center;
+}
+
+.left_column,
+.central_column,
+.right_column  {
+	float: left;
+	height: auto;
+	min-height: 400px;
+	padding: 15px;
+}
+
+.left_column,
+.right_column   {
+	width: 210px;
+	background-color: #edeef0;
+}
+
+.central_column {
+	width: 487px;
+	background-color: #ffffff;
+}
+
+.left_column {
+	border-right: 1px solid #c7cacf;
+}
+
+.right_column {
+	border-left: 1px solid #c7cacf;
+}
+
+/*FOOTER*/
+footer {
+	margin: 10px;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+}
